@@ -63,6 +63,19 @@ void imprime(ListaDupla l) {
     t = t->next;
   }
   printf("\n");
+  
+link menorElemento(ListaDupla l){
+  ListaDupla aux = l;
+  link t = l->head;
+  int menor = l->item;
+  while (t != l->z ){
+    if(t->item < aux->item)
+      return menorElemento(l->head)
+  }
+}
+void ordenaLista(ListaDupla l){
+  ListaDupla aux;
+  
 }
 
 link buscar(ListaDupla l, int item) {
