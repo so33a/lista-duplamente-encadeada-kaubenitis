@@ -5,12 +5,16 @@
 
 int main () {
   ListaDupla l = inicializa();
-  link aux, aux2;
-  insereDepois(l, l->head, aux= novoNo(12, NULL, NULL));
+  link aux, aux2, menor;
+  insereDepois(l, l->head, aux = novoNo(12, NULL, NULL));
   aux2 = novoNo(21, NULL, NULL);
   insereDepois(l,aux,aux2);
   aux = novoNo(42, NULL, NULL); 
   insereDepois(l, aux2, aux);
+  imprime(l);
+  imprimeReverso(l);
+  menor = menorElemento(l);
+  ordenaLista(l);
   imprime(l);
   imprimeReverso(l);
   printf ("\nremovendo %d \n", aux2->item);
